@@ -1,0 +1,55 @@
+'use client'
+
+import axios from "axios";
+import { useState } from "react";
+import { useEffect } from "react";
+
+const StudentList = ({ message}) => {
+
+
+    const [students, setStudents] = useState([]);
+
+    useEffect(() => {
+      const fetchStudents = async () => {
+        try {
+          const response = await fetch('/api/students');
+          const data = await response.json();
+          setStudents(data);
+        } catch (error) {
+          console.error('Error fetching students:', error);
+        }
+      };
+  
+      fetchStudents();
+    }, []);
+ 
+
+      // const handleSubmit = () => { 
+        // let data = { 
+        //   student_id : 2,
+        //   student_name : 'John',
+        //   admission_number : 1234 ,
+        //   student_number : 'sgd123',
+        //   gender : 'male',
+        //   date_of_birth : '1999-10-09' ,
+        //   blood_type : 'B',
+        //   parent_id : 1
+    
+        // }
+        
+
+  // useEffect(() => {
+  //   fetchClasses();
+  // }, [currentPage]);
+
+  // const fetchClasses = async () => {
+  //   try {
+ 
+  //     const response = await axios.get('/api/classes'); //?page=${currentPage}&search=${searchQuery}
+  //     setCampuses(response.data);
+  //     setFilteredCampuses(response.data); // Initialize filtered campuses with all campuses
+ 
+  //   } catch (error) {
+  //     console.error('Error fetching classes:', error);
+  //   }
+  // };
