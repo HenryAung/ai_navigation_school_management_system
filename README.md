@@ -39,22 +39,32 @@ To install and run the School Management System locally, follow these steps:
    ```bash
    npm install
 
-4. Start the frontend server:
+4. Change .env file in the root folder with your MySQL password:
+   
+   DATABASE = ai_navigation_school_management
+   DATABASE_HOST = localhost
+   DATABASE_USER = root
+   DATABASE_PASSWORD = "your_mysql_password_here"
+   PORT = 3000
+   
+6. Start the frontend server:
 
    ```bash
    npm run dev
 
-5. Navigate to the server directory:
+7. Navigate to the server directory:
    
    ```bash
    cd ../server
 
-3. Install flask dependencies:
+8. Install flask dependencies:
    
    ```bash
    pip install -r requirements.txt
 
-4. Start the frontend server:
+9. Start the frontend server:
 
    ```bash
    python app.py
+
+
