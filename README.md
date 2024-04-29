@@ -41,11 +41,8 @@ To install and run the School Management System locally, follow these steps:
 
 4. Change .env file in the root folder with your MySQL password:
    
-   DATABASE = ai_navigation_school_management
-   DATABASE_HOST = localhost
-   DATABASE_USER = root
    DATABASE_PASSWORD = "your_mysql_password_here"
-   PORT = 3000
+
    
 6. Start the frontend server:
 
