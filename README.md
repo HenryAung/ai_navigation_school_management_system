@@ -29,12 +29,32 @@ To install and run the School Management System locally, follow these steps:
    ```bash
    git clone https://github.com/your_username/school-management-system.git
 
-2. Navigate to the project directory:
+2. Navigate to the front directory:
    
-  ```bash
+   ```bash
    cd frontend
 
-3. Install dependencies:
+3. Install next.js dependencies:
    
-  ```bash
+   ```bash
    npm install
+
+4. Start the frontend server:
+
+   ```bash
+   npm run dev
+
+5. Navigate to the server directory:
+   
+   ```bash
+   cd ../server
+
+3. Install flask dependencies:
+   
+   ```bash
+   pip install -r requirements.txt
+
+4. Start the frontend server:
+
+   ```bash
+   python app.py
